@@ -1,0 +1,22 @@
+# Site settings
+baseURL = "http://basico.io/"
+# HTML Language Code Reference, such as en, zh-cn
+languageCode = "en"
+title = "Basico"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-66919923-1"
+hasCJKLanguage = true
+
+[params]
+	name = "Basico.io"
+	description = "Sencillos sitios web para tus proyectos"
+	bio = "Sencillos y elegantes sitios web para tus proyectos"
+	# Enter optionally your twitter account
+	twitter = "basico-io"
+	enableRSS = true
+
+# Enable googleAnalytics
+enableGoogleAnalytics = true
+
+	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+	iconFont = "font-awesome"

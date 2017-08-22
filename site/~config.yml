@@ -1,0 +1,6 @@
+baseurl: "/"
+languageCode: "en-us"
+title: "Basico.io"
+metaDataFormat: "yaml"
+params:
+  Subtitle: "basico"
