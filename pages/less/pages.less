@@ -1,0 +1,131 @@
+/*------------------------------------------------------------------
+Pages Frontend v1.1.1
+Theme : Default
+Generated From LESS
+[Table of contents]
+
+1. Layouts
+2. Swiper
+3. Chat
+4. Panels
+5. Fonts
+6. Typography
+7. Buttons
+8. Alerts
+9. Notification
+10. Progress & Indicators
+11. Modals
+12. Tabs & Accordians
+13. Form Elements
+14. Tables
+15. Device Morph
+16. Social Cards
+17. Gallery Components
+18. z-index
+19. Misc
+20. Demo
+21. Hover
+22. Pricing
+23. Blog
+-------------------------------------------------------------------*/
+
+// Mixins tools
+@import "mixins";
+
+// Includes of Modules
+@import "modules";
+
+// Responsive Util
+@import "responsive";
+
+//Change your theme here 
+@theme-name:"default";
+
+.theme {
+    @import "themes/default/theme.less";
+}
+.theme();
+
+//Theme Overwrite
+@base-font-family: futura, wf_segoe-ui_light,wf_segoe-ui_normal,"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@body-font-size : 20px;
+@body-font-family : @base-font-family;
+body{
+	font-family: futura, "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	color: #012352;
+}
+h1, h2, h3, h4, h5, h6{
+	color: #012352;
+}
+h1, h2, h3, h4, h5, h6, .btn
+{
+	font-family: @base-font-family;
+}
+
+h1 p {
+	font-family: futura, "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	font-weight: normal;
+}
+
+
+.container{
+	max-width: 960px;
+}
+
+.hero{
+	h1{
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.hero-text{
+		font-size: 1.5em;
+		line-height: 1.5;
+		color: #012352;
+	}
+	.btn{
+		font-size: 1em;
+		font-weight: bold;
+		border: 2px solid rgba(255, 255, 255, 0);
+		color: #fff;
+		cursor: pointer;
+		background-color: #0a5ef2;
+		padding: 1.5em 1.75em !important;
+		text-decoration: none;
+		-webkit-transition: background-color 0.3s ease;
+		transition: background-color 0.3s ease;
+		-webkit-transition: all .3s ease;
+		transition: all .3s ease;
+		&:hover {
+		    background: #eec200;
+		    color: #000;
+		    text-decoration: none;
+		}
+	}
+}
+
+.background-image{
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	&:before {
+	    content: '';
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    z-index: 1;
+	    background-color: #fff;
+	    background-image: -o-linear-gradient(left,#fff 0,#47d3dd 100%);
+	    background: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), to(rgba(71, 211, 221, 0)));
+	    background: linear-gradient(to right, rgb(255, 255, 255) 25%, rgba(71, 211, 221, 0) 100%);
+	    opacity: .5;
+	}
+	.container{
+		z-index: 2;
+		position: relative;
+	}
+}
