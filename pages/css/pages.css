@@ -8857,6 +8857,12 @@ h1 p {
   position: relative;
   z-index: 9;
 }
+@media (max-width: 767px) {
+  .data {
+    text-align: center;
+    margin: 0rem 1rem 1rem 1rem;
+  }
+}
 .user-avatar {
   width: 60px;
   height: 60px;
