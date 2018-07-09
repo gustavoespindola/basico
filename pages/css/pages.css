@@ -8788,6 +8788,29 @@ h1 p {
   color: #000;
   text-decoration: none;
 }
+.bg-master-blue {
+  background-color: #0c5df2;
+}
+.bg-master-blue .btn {
+  font-size: 1em;
+  font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0);
+  color: #fff;
+  cursor: pointer;
+  background-color: #0a5ef2;
+  padding: 1.5em 1.75em !important;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background: #eec200;
+  color: #000;
+  text-decoration: none;
+}
+.bg-master-blue .btn:hover {
+  background-color: black;
+  color: white;
+}
 .background-image {
   background-size: cover;
   background-position: center;
@@ -8812,4 +8835,25 @@ h1 p {
 .background-image .container {
   z-index: 2;
   position: relative;
+}
+.logotypes ul.list-logotypes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.logotypes ul.list-logotypes li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.logotypes ul.list-logotypes li img {
+  width: auto;
+  height: 100px;
+}
+.data {
+  border-radius: 6px;
+  box-shadow: 0 8px 38px -4px rgba(1, 35, 82, 0.1);
+  position: relative;
+  z-index: 9;
 }

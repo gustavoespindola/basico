@@ -103,7 +103,30 @@ h1 p {
 		}
 	}
 }
-
+.bg-master-blue{
+	background-color: #0c5df2;
+	.btn{
+		font-size: 1em;
+		font-weight: bold;
+		border: 2px solid rgba(255, 255, 255, 0);
+		color: #fff;
+		cursor: pointer;
+		background-color: #0a5ef2;
+		padding: 1.5em 1.75em !important;
+		text-decoration: none;
+		-webkit-transition: background-color 0.3s ease;
+		transition: background-color 0.3s ease;
+		-webkit-transition: all .3s ease;
+		transition: all .3s ease;
+		background: #eec200;
+		color: #000;
+		text-decoration: none;
+		&:hover{
+			background-color: black;
+			color: white;
+		}
+	}
+}
 .background-image{
 	background-size: cover;
 	background-position: center;
@@ -128,4 +151,28 @@ h1 p {
 		z-index: 2;
 		position: relative;
 	}
+}
+
+.logotypes{
+	ul.list-logotypes{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			img{
+				width: auto;
+				height: 100px;
+			}
+		}
+	}
+}
+.data{
+    border-radius: 6px;
+    box-shadow: 0 8px 38px -4px rgba(1, 35, 82, 0.1);
+    position: relative;
+    z-index: 9;
 }
