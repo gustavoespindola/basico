@@ -8857,3 +8857,16 @@ h1 p {
   position: relative;
   z-index: 9;
 }
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  background-image: url('../../assets/images/mjr.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  margin-right: 10px;
+  float: left;
+}
+.user-excerpt {
+  float: left;
+}
