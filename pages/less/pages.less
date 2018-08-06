@@ -96,16 +96,20 @@ h1 p {
 		transition: background-color 0.3s ease;
 		-webkit-transition: all .3s ease;
 		transition: all .3s ease;
+		box-shadow: 0 8px 38px -4px rgba(1, 35, 82, 0.5);
 		&:hover {
 		    background: #eec200;
 		    color: #000;
 		    text-decoration: none;
+			box-shadow: 0 8px 38px -4px rgba(1, 35, 82, 0);
+
 		}
 	}
 }
 .bg-master-blue{
 	background-color: #0c5df2;
 	.btn{
+		box-shadow: 0 8px 38px -4px rgba(1, 35, 82, 0.5);
 		font-size: 1em;
 		font-weight: bold;
 		border: 2px solid rgba(255, 255, 255, 0);
@@ -178,10 +182,10 @@ h1 p {
 }
 
 @media (max-width: 767px){
-.data {
-    text-align: center;
-    margin: 0rem 1rem 1rem 1rem;
-}
+	.data {
+		text-align: center;
+		margin: 0rem 1rem 1rem 1rem;
+	}
 }
 
 .user-avatar{
