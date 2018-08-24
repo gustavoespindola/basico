@@ -4,7 +4,7 @@
 	 viewBox="0 0 612.7 80" style="enable-background:new 0 0 612.7 80;" xml:space="preserve">
 <style type="text/css">
 	.st0{filter:url(#Adobe_OpacityMaskFilter);}
-	.st1{fill:#A6FFCB;}
+	.st1{fill:#FFFFFF;}
 	.st2{mask:url(#SVGID_1_);fill:url(#SVGID_2_);}
 </style>
 <defs>
@@ -33,7 +33,7 @@
 		</g>
 	</g>
 </mask>
-<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="40" x2="642.9883" y2="40">
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="42" x2="643" y2="42" gradientTransform="matrix(1 0 0 -1 0 82)">
 	<stop  offset="0.15" style="stop-color:#5533FF"/>
 	<stop  offset="0.7" style="stop-color:#05D5FF"/>
 	<stop  offset="0.94" style="stop-color:#A6FFCB"/>
