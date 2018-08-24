@@ -119,7 +119,20 @@ nav{
 	}
 }
 .final-cta{
-	// background: linear-gradient(150deg, #5533ff -10%, #05d5ff 50%, #a6ffcb 110%);
+    position: relative;
+    overflow: hidden;
+    &:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -180px;
+		height: 360px;
+		background: #f6f9fc;
+		-webkit-transform: skew(0,-12deg);
+		transform: skew(0,-12deg);
+		z-index: -1;
+    }
 	.btn{
 		box-shadow: 0 8px 38px 0px rgba(0, 0, 0, 0.15);
 		font-weight: bold;

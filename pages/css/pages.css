@@ -8805,6 +8805,22 @@ nav.header.light {
   text-decoration: none;
   box-shadow: 0 8px 38px -4px rgba(1, 35, 82, 0);
 }
+.final-cta {
+  position: relative;
+  overflow: hidden;
+}
+.final-cta:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -180px;
+  height: 360px;
+  background: #f6f9fc;
+  -webkit-transform: skew(0, -12deg);
+  transform: skew(0, -12deg);
+  z-index: -1;
+}
 .final-cta .btn {
   box-shadow: 0 8px 38px 0px rgba(0, 0, 0, 0.15);
   font-weight: bold;
