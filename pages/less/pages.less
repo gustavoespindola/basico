@@ -47,16 +47,16 @@ Generated From LESS
 .theme();
 
 //Theme Overwrite
-@base-font-family: futura, wf_segoe-ui_light,wf_segoe-ui_normal,"Helvetica Neue", Helvetica, Arial, sans-serif;
-
+@base-font-family: 'europa', futura, wf_segoe-ui_light,wf_segoe-ui_normal,"Helvetica Neue", Helvetica, Arial, sans-serif;
 @body-font-size : 20px;
 @body-font-family : @base-font-family;
+
 body{
-	font-family: futura, "Helvetica Neue",Helvetica,Arial,sans-serif !important;
-	color: #012352;
+	font-family: @base-font-family;
+	color: #111;
 }
 h1, h2, h3, h4, h5, h6{
-	color: #012352;
+	color: #111;
 }
 h1, h2, h3, h4, h5, h6, .btn
 {
@@ -64,39 +64,51 @@ h1, h2, h3, h4, h5, h6, .btn
 }
 
 h1 p {
-	font-family: futura, "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	font-family: @base-font-family;
 	font-weight: normal;
 }
 
-
-.container{
-	max-width: 960px;
+@media (min-width: 1200px){
+	.container, 
+	.jumbotron .container{
+		max-width:  1080px;
+	}
 }
 
+nav{
+	z-index: 9999!important;
+	&.header.light {
+		border-bottom: 0px solid #f0f0f0;
+		background-color: white;
+	}
+}
+.jumbotron{
+	background-color: white;
+}
 .hero{
+	z-index: 9 !important;
+	background-color: white; 
 	h1{
-		text-transform: uppercase;
 		font-weight: bold;
 	}
 	.hero-text{
-		font-size: 1.5em;
+		font-size: 20px;
 		line-height: 1.5;
-		color: #012352;
+		color: #111;
 	}
 	.btn{
-		font-size: 1em;
-		font-weight: bold;
+		font-size: 20px;
+		font-weight: normal;
 		border: 2px solid rgba(255, 255, 255, 0);
 		color: #fff;
 		cursor: pointer;
 		background-color: #0a5ef2;
-		padding: 1.5em 1.75em !important;
 		text-decoration: none;
 		-webkit-transition: background-color 0.3s ease;
 		transition: background-color 0.3s ease;
 		-webkit-transition: all .3s ease;
 		transition: all .3s ease;
-		box-shadow: 0 8px 38px -4px rgba(1, 35, 82, 0.5);
+		box-shadow: 0 8px 38px -4px rgba(10, 94, 242,.5);
 		&:hover {
 		    background: #eec200;
 		    color: #000;
@@ -106,24 +118,15 @@ h1 p {
 		}
 	}
 }
-.bg-master-blue{
-	background-color: #0c5df2;
+.final-cta{
+	// background: linear-gradient(150deg, #5533ff -10%, #05d5ff 50%, #a6ffcb 110%);
 	.btn{
-		box-shadow: 0 8px 38px -4px rgba(1, 35, 82, 0.5);
-		font-size: 1em;
+		box-shadow: 0 8px 38px 0px rgba(0, 0, 0, 0.15);
 		font-weight: bold;
 		border: 2px solid rgba(255, 255, 255, 0);
-		color: #fff;
 		cursor: pointer;
-		background-color: #0a5ef2;
-		padding: 1.5em 1.75em !important;
-		text-decoration: none;
-		-webkit-transition: background-color 0.3s ease;
-		transition: background-color 0.3s ease;
-		-webkit-transition: all .3s ease;
-		transition: all .3s ease;
 		background: #eec200;
-		color: #000;
+		color: #111;
 		text-decoration: none;
 		&:hover{
 			background-color: black;
@@ -202,3 +205,100 @@ h1 p {
 .user-excerpt{
 	float: left;
 }
+
+
+/**/
+ #stripes {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transform: skewY(-12deg);
+    transform: skewY(-12deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+    position: absolute;
+}
+#stripes, #stripes span {
+    position: absolute;
+}
+#stripes span {
+    height: 40px;
+}
+
+#stripes :first-child {
+    width: 50%;
+    left: 50%;
+    top: 40px;
+    background: #4c29ff;
+}
+#stripes :nth-child(2) {
+    width: 14%;
+    right: 0;
+    bottom: 40px;
+    background: #2be7ff;
+}
+#stripes :nth-child(3) {
+    width: 25%;
+    bottom: 0;
+    right: 0;
+    background: #a1ffc8;
+}
+
+@media (min-width: 670px){
+	#stripes span {
+    	height: 150px;
+	}
+	#stripes :first-child {
+	    top: 0;
+	    background: #4750ff;
+	}
+	#stripes :nth-child(2) {
+	    width: 16.66667%;
+	    top: 300px;
+	    bottom: auto;
+	    background: #0dcfff;
+	}
+	#stripes :nth-child(3) {
+	    width: 33.33333%;
+	    right: auto;
+	    background: #11bdff;
+	}
+}
+
+@media (min-width: 880px){
+	#stripes span {
+	    height: 190px;
+	}
+	#stripes :first-child {
+	    width: 33.33333%;
+	    left: -16.66666%;
+	    background: #53f;
+	}
+	#stripes :nth-child(2) {
+	    width: 33.33333%;
+	    top: 0;
+	    left: 16.66666%;
+	    right: auto;
+	    background: #4553ff;
+	}
+	#stripes :nth-child(3) {
+	    width: 33.33333%;
+	    left: 49.99999%;
+	    bottom: auto;
+	    background: #4f40ff;
+	}
+	#stripes :nth-child(4) {
+	    width: 33.33333%;
+	    top: 380px;
+	    right: -16.66666%;
+	    background: #25ddf5;
+	}
+	#stripes :nth-child(5) {
+	    width: 33.33333%;
+	    bottom: 0;
+	    background: #1fa2ff;
+	}
+}
+
+
